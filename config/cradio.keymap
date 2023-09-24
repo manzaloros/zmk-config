@@ -36,7 +36,7 @@
 
         colemak {
             bindings = <
-&kp Q             &kp W               &kp F           &kp P                &kp B    &kp J  &kp H            &kp U            &kp Y                &kp SQT
+&kp Q             &kp W               &kp F           &kp P                &kp B    &kp J  &kp L            &kp U            &kp Y                &kp SQT
 &hm LEFT_SHIFT A  &hm LEFT_CONTROL R  &hm LEFT_ALT S  &hm LGUI T           &kp G    &kp M  &hm RIGHT_GUI N  &hm RIGHT_ALT E  &hm RIGHT_CONTROL I  &hm RIGHT_SHIFT O
 &lt 2 Z           &kp X               &kp C           &kp D                &kp V    &kp K  &kp H            &kp COMMA        &kp PERIOD           &kp SEMICOLON
                                                       &lt NAV_L BACKSPACE  &mo 4    &none  &lt 3 SPACE
