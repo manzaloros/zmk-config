@@ -13,6 +13,8 @@
 #define NUM_L 3
 #define SYM_L 4
 
+#include "mouse.dtsi" 
+
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 
 &lt {
@@ -49,9 +51,9 @@
 
         nav_layer {
             bindings = <
-&trans  &trans  &trans  &trans    &trans      &trans      &kp PAGE_DOWN   &kp PG_UP       &kp HOME      &kp END
+&trans  &trans  U_WH_U  U_WH_D    &trans      &trans      &kp PAGE_DOWN   &kp PG_UP       &kp HOME      &kp END
 &trans  &trans  &trans  &none     &trans      &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
-&trans  &trans  &trans  &mkp LCLK &mkp RCLK   &trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&trans  &trans  &trans  &mkp LCLK &mkp RCLK   &trans      U_MS_L          U_MS_D          U_MS_U        U_MS_R
                         &trans    &trans      &kp DELETE  &kp ENTER
             >;
         };
@@ -68,7 +70,7 @@
         num_layer {
             bindings = <
 &kp F1             &kp F2           &kp F3           &kp F4                 &kp F5          &kp F6        &kp F7           &kp F8           &kp F9           &kp F10
-&hm LEFT_SHIFT N7  &kp KP_NUMBER_5  &kp KP_NUMBER_3  &hm LEFT_GUI NUMBER_1  &kp NUMBER_9    &kp NUMBER_8  &kp KP_NUMBER_0  &kp KP_NUMBER_2  &kp KP_NUMBER_4  &kp KP_NUMBER_6
+&hm LEFT_SHIFT N7  &kp NUMBER_5  &kp NUMBER_3  &hm LEFT_GUI NUMBER_1  &kp NUMBER_9    &kp NUMBER_8  &kp NUMBER_0  &kp NUMBER_2  &kp NUMBER_4  &kp NUMBER_6
 &kp F11            &kp F12          &kp F13          &kp F14                &none           &none         &none            &none            &none            &none
                                                      &kp ESCAPE             &kp TAB         &trans        &trans
             >;
