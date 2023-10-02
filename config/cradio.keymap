@@ -12,6 +12,8 @@
 #define NUM_L 3
 #define SYM_L 4
 
+#include "mouse.dtsi"
+
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 
 &lt {
@@ -48,9 +50,9 @@
 
         nav_layer {
             bindings = <
-&trans  &trans  &none  &none    &trans      &trans      &kp PAGE_DOWN   &kp PG_UP       &kp HOME      &kp END
+&trans  &trans  U_WH_U  U_WH_D    &trans      &trans      &kp PAGE_DOWN   &kp PG_UP       &kp HOME      &kp END
 &trans  &trans  &trans  &none     &trans      &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
-&trans  &trans  &trans  &none     &none       &trans      &none          &none          &none        &none
+&trans  &trans  &trans  &mkp LCLK &mkp RCLK   &trans      U_MS_L          U_MS_D          U_MS_U        U_MS_R
                         &trans    &trans      &kp DELETE  &kp ENTER
             >;
         };
